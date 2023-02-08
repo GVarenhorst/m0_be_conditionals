@@ -10,7 +10,7 @@
   # if it is snowy, print "coat"
   # if it is icy, print "yak traks"
 
-weather = "sunny"
+weather = "apocalyptic"
 
 if weather == "sunny"
   p "sunscreen"
@@ -28,6 +28,7 @@ end
 # to print something other than 'coat'
 
 
+
 ##################
 # Using the num_quarters variable defined below, determine
 # if you have enough money to buy a gumball. A gumball costs
@@ -43,8 +44,11 @@ end
 
 num_quarters = 0
 
+if num_quarters < 2
+  puts "I don't have enough money for a gumball"
+else  
 puts "I have enough money for a gumball"
-puts "I don't have enough money for a gumball"
+end
 
 
 #####################
@@ -61,5 +65,12 @@ puts "I don't have enough money for a gumball"
 # Experiment with manipulating the value held within both variables
 # to make sure all above conditions output what you expect.
 
-cups_of_flour = 1
-has_sauce = true
+cups_of_flour = 3
+has_sauce = false
+
+if cups_of_flour >= 2 && has_sauce == true
+  puts "I can make the pizza"
+else 
+  puts "I cannot make the pizza"
+end
+
